@@ -10,9 +10,11 @@ const Book = ({ book }) => {
                 <img src={image} alt="" className="rounded-md w-28 h-40 dark:bg-gray-500" />
             </div>
             <div className='space-y-6'>
-                <div className=' text-[#23BE0A] font-medium '>
+                <div className=' text-[#23BE0A] font-medium space-x-8 '>
+                    <span>{tags[0]}</span>
+                    <span>{tags[1]}</span>
 
-                    {tags}
+
                 </div>
 
                 <h2 className="text-2xl font-bold tracking-wide">{bookName}</h2>
