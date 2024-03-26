@@ -1,0 +1,50 @@
+[
+    {
+        "image": "https://i.ibb.co/p2TKJVV/kindpng-1064993.png",
+        "tags": ["Romance", "Drama"],
+        "bookName": "The Great Gatsby",
+        "author": "F. Scott Fitzgerald",
+        "category": "Classic Literature",
+        "rating": 4.5
+    },
+    {
+        "image": "https://i.ibb.co/wRBnQyV/kindpng-2193744-1-1.png",
+        "tags": ["Coming-of-age", "Psychological"],
+        "bookName": "The Catcher in the Rye",
+        "author": "J.D. Salinger",
+        "category": "Literary Fiction",
+        "rating": 4.3
+    },
+    {
+        "image": "https://i.ibb.co/JdZ7Lc4/kindpng-2592315-1.png",
+        "tags": ["Social Issues", "Legal Drama"],
+        "bookName": "To Kill a Mockingbird",
+        "author": "Harper Lee",
+        "category": "Modern Classics",
+        "rating": 4.8
+    },
+    {
+        "image": "https://i.ibb.co/9sbTGhj/kindpng-7318921.png",
+        "tags": ["Dystopian", "Political"],
+        "bookName": "Pride and Prejudice",
+        "author": "Jane Austen",
+        "category": "Romantic Fiction",
+        "rating": 4.6
+    },
+    {
+        "image": "https://i.ibb.co/gr9hWrp/kindpng-4945926-1.png",
+        "tags": ["Regency", "Satire"],
+        "bookName": "Pride and Prejudice",
+        "author": "Jane Austen",
+        "category": "Romantic Fiction",
+        "rating": 4.6
+    },
+    {
+        "image": "https://i.ibb.co/QKTt9Zr/kindpng-5624060-1.png",
+        "tags": ["Adventure", "Quest"],
+        "bookName": "The Hobbit",
+        "author": "J.R.R. Tolkien",
+        "category": "Fantasy",
+        "rating": 4.9
+    }
+]
