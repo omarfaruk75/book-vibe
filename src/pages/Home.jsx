@@ -5,7 +5,6 @@ import bookImg from '../assets/images/pngwing 1.png'
 
 const Home = () => {
     const books = useLoaderData();
-
     return (
         <div>
             <div className="hero min-h-screen bg-base-200">
@@ -24,7 +23,6 @@ const Home = () => {
             <div className='my-6'>
                 <h2 className='text-[40px] font-bold text-center py-4'>Books</h2>
                 <div className='grid grid-cols-3 gap-4'>
-
                     {
                         books.map(book => <Book key={book.id} book={book}></Book>)
                     }
