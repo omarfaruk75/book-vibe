@@ -31,7 +31,7 @@ const BookCard = ({ book }) => {
                 <div className="flex flex-row gap-8 text-base">
                     <span className="text-[#328EFF] bg-[#328EFF26] px-3 py-1 rounded-full">Category: {category}</span>
                     <span className="text-[#23BE0A] bg-[#FFAC3326] px-3 py-1 rounded-full">Ratings: {rating}</span>
-                    <Link to={`/showDetails/${bookId}`} className="bg-[#23BE0A] px-3 py-1  text-lg rounded-full text-white font-medium">View Details</Link>
+                    <Link to={`showDetails/${bookId}`} className="bg-[#23BE0A] px-3 py-1  text-lg rounded-full text-white font-medium">View Details</Link>
                 </div>
             </div>
         </div >

@@ -13,6 +13,9 @@ import BookDetails from './components/BookDetails/BookDetails';
 import Read from './components/Read/Read';
 import Wishlist from './components/Wishlist/Wishlist';
 import ShowDetails from './components/ShowDetails/ShowDetails';
+import { ToastContainer, toast } from 'react-toastify';
+
+
 
 
 const router = createBrowserRouter([
@@ -31,16 +34,7 @@ const router = createBrowserRouter([
         loader: () => fetch('/book.json'),
         element: <BookDetails></BookDetails>,
       },
-      {
-        path: '/read/:id',
-        loader: () => fetch('/book.json'),
-        element: <Read></Read>
-      },
-      {
-        path: '/wishlist/:id',
-        loader: () => fetch('/book.json'),
-        element: <Wishlist></Wishlist>
-      },
+
       {
         path: '/showDetails/:id',
         loader: () => fetch('/book.json'),
@@ -52,7 +46,15 @@ const router = createBrowserRouter([
         element: <ListedBooks />,
         loader: () => fetch('/book.json'),
       },
-
+      // {
+      //   path: 'listedbooks/read',
+      //   element: <Read></Read>
+      // },
+      {
+        path: 'listedbooks/wishlist',
+        loader: () => fetch('/book.json'),
+        element: <Wishlist></Wishlist>
+      },
 
       {
         path: '/pagestoread',

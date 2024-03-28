@@ -1,18 +1,14 @@
-import { Link, useLoaderData, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { CiLocationOn } from "react-icons/ci";
 import { IoMdPeople } from "react-icons/io";
 import { MdOutlineContactPage } from "react-icons/md";
 
 
-const Read = () => {
-    const books = useLoaderData();
-    const { id } = useParams();
-    const idInt = parseInt(id);
-    const book = books.find(book => book.bookId == idInt);
-    const { bookId, bookName, author, image, review, totalPages, rating, category, tags, publisher, yearOfPublishing } = book || {};
+const Read = ({ book }) => {
+    const { bookName, author, image, totalPages, rating, category, tags, publisher, yearOfPublishing } = book || {};
     return (
         <div>
-            <div className=" flex flex-row justify-center items-center rounded-xl mb-5">
+            <div className=" flex flex-col md:flex-row justify-center items-center rounded-xl mb-5">
                 <div className="bg-[#F3F3F3] w-80 h-80 flex flex-rol justify-center items-center rounded-xl ">
                     <img src={image} alt="" />
                 </div>
@@ -36,7 +32,7 @@ const Read = () => {
                     <div className="flex flex-row gap-8 text-base">
                         <span className="text-[#328EFF] bg-[#328EFF26] px-3 py-1 rounded-full">Category: {category}</span>
                         <span className="text-[#23BE0A] bg-[#FFAC3326] px-3 py-1 rounded-full">Ratings: {rating}</span>
-                        <Link to={`/showDetails/${bookId}`} className="bg-[#23BE0A] px-3 py-1  text-lg rounded-full text-white font-medium">View Details</Link>
+                        <Link className="bg-[#23BE0A] px-3 py-1  text-lg rounded-full text-white font-medium">View Details</Link>
                     </div>
                 </div>
             </div >

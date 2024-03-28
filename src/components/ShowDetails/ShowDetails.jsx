@@ -1,4 +1,7 @@
-import { useLoaderData, useParams } from "react-router-dom";
+import { Link, useLoaderData, useParams } from "react-router-dom";
+
+
+
 
 
 const ShowDetails = () => {
@@ -37,6 +40,8 @@ const ShowDetails = () => {
                     <p><span className="text-[131313B3]">Year of Publishing :</span > <b>{yearOfPublishing}</b></p>
                     <p><span className="text-[131313B3]">Number of Pages: </span><b>{rating}</b></p>
                     <div className="flex flex-row gap-4 font-bold">
+
+                        <Link to={'/'} ><button className="btn bg-[#23BE0A] text-white">Back to Home</button></Link>
 
 
                     </div>
